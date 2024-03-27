@@ -1,0 +1,14 @@
+{
+    "main": "index.html",
+    "logo": "logo.jpg",
+    "development": {
+        "main": "http://127.0.0.1:8080/"
+    },
+    "features": [
+        {
+            "code": "curl",
+            "explain": "curl to code",
+            "cmds": ["curl", "code", "python", "javascript"]
+        }
+    ]
+}
