@@ -16,6 +16,6 @@ pnpm dev
 
 ### 截图
 
-<img width="960" src="./screenshot/dark.png.gif" alt="image" />
+<img width="960" src="./screenshot/dark.png" alt="image" />
 
-<img width="960" src="./screenshot/light.png.gif" alt="image" />
+<img width="960" src="./screenshot/light.png" alt="image" />
