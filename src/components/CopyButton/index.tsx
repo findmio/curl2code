@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import copy from 'copy-to-clipboard';
+
 import { CopyIcon, CheckIcon } from '@icons/index';
+import { isWeb } from 'src/utils/env';
 
 type CopyButtonType = {
     value: string;
@@ -16,8 +19,11 @@ const CopyButton: React.FC<CopyButtonType> = (props) => {
         if (copying) {
             return;
         }
-
-        utools.copyText(value);
+        if (isWeb) {
+            copy(value);
+        } else {
+            utools.copyText(value);
+        }
 
         setCopying(true);
 
