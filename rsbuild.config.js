@@ -1,6 +1,6 @@
 const { pluginReact } = require('@rsbuild/plugin-react');
 
-const assetPrefix = process.env.PUBLIC_RUN_MODE === 'web' ? 'curl2code' : '/';
+const assetPrefix = process.env.PUBLIC_RUN_MODE === 'web' ? '/curl2code/' : '/';
 
 module.exports = {
     html: {
